@@ -4,6 +4,9 @@ This project uses an ESP32 microcontroller to fetch real-time bus arrival data f
 
 Currently, the project is configured to display the next three arrival timings for **Bus 230** at **Lighthouse Sch (Bus Stop: 52211)**.
 
+<!-- INSERT PICTURE HERE: A working shot of the ESP32 and OLED display showing the bus timings -->
+![Bus Tracker in Action](assets/working_demo.jpeg)
+
 ## 💡 Why This Project?
 
 Morning commutes are often rushed. Unlocking a phone, navigating to a transit app, and waiting for UI elements to load just to check a single bus timing adds unnecessary friction when trying to get out the door. Often, my phone stays in my pocket entirely while I'm getting ready.
@@ -14,8 +17,6 @@ I built this dedicated hardware tracker to solve a simple "glanceability" proble
 * **Hands-Free Routine:** Lets me glance at incoming arrivals while putting on shoes or grabbing my keys, without touching a screen.
 
 Instead of navigating an app, it turns live arrival data into ambient information at the exact physical moment and place it's needed most.
-<!-- INSERT PICTURE HERE: A working shot of the ESP32 and OLED display showing the bus timings -->
-![Bus Tracker in Action](assets/working_demo.jpeg)
 
 ## 🛠 Hardware Requirements
 To replicate this project, you will need:
