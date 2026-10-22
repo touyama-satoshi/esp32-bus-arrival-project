@@ -59,15 +59,9 @@ The SSD1306 driver is not built into MicroPython by default, so you need to load
     ```python
     WIFI_SSID = "YOUR_WIFI_NAME"
     WIFI_PASS = "YOUR_WIFI_PASSWORD"
+    ACCOUNT_KEY = "YOUR_LTA_DATAMALL_KEY"
     ```
-3.  **Add API Key:** Update the headers dictionary with your LTA DataMall Account Key:
-    ```python
-    headers = {
-        "AccountKey": "YOUR_LTA_DATAMALL_KEY", 
-        "accept": "application/json"
-    }
-    ```
-4.  **Run the Code:** Save the script to your ESP32 as `main.py` so it runs automatically on boot, or hit the "Run" button in Thonny to test it. 
+3.  **Run the Code:** Save the script to your ESP32 as `main.py` so it runs automatically on boot, or hit the "Run" button in Thonny to test it. 
 
 ## ⚙️ How It Works
 1.  **Network Setup:** The ESP32 connects to the specified Wi-Fi network.
