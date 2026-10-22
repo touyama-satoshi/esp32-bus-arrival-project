@@ -2,7 +2,7 @@
 
 This project uses an ESP32 microcontroller to fetch real-time bus arrival data from the Singapore LTA (Land Transport Authority) DataMall API and displays the timings on an SSD1306 OLED screen. 
 
-Currently, the project is configured to display the next three arrival timings for **Bus 230** at **Lighthouse Sch (Bus Stop: 52211)**.
+Currently, the project is configured to display the arrival timings for **Bus 230** at **Lighthouse Sch (Bus Stop: 52211)**.
 
 <!-- INSERT PICTURE HERE: A working shot of the ESP32 and OLED display showing the bus timings -->
 ![Bus Tracker in Action](assets/working_demo.jpeg)
@@ -79,4 +79,3 @@ The SSD1306 driver is not built into MicroPython by default, so you need to load
 ## ⚠️ Limitations & Future Improvements
 *   **Memory/Hardware Constraints:** Due to the limited RAM on the ESP32 when handling large JSON responses, the current code is constrained to fetching and displaying data for a single bus service at a single bus stop. Attempting to parse the entire bus stop's data at once may result in a `MemoryError`.
 *   **Screen Space:** The 128x64 display is optimized for this specific layout. Adding more bus services would require scrolling text or paging logic.
-*   **Strict 3-Bus Requirement:** The current code hardcodes the expectation of exactly three incoming buses. If the API returns fewer than three scheduled buses (for example, late at night when service is ending), the script will throw an `IndexError` and stop running.
